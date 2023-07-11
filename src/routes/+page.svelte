@@ -1,2 +1,13 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  import { LL } from '../i18n/i18n-svelte'
+  
+  
+  /** 
+   * @type {string} 
+   */
+  let a = "The answer is 42"
+
+</script>
+
+<h1>{$LL.welcome()}</h1>
+<p>{a}</p>
